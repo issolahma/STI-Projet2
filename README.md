@@ -28,6 +28,14 @@ Le code et la base de donnée se trouvent dans le dossier `site`, et sont direct
 
 
 
+### Scripts
+
+Le script `start-services.sh` lance les services *PHP* et *nginx* dans le cas ou on relance le conteneur.
+
+Le script `stopApp.sh` stoppe et supprime le conteneur.
+
+
+
 ### Base de donnée
 
 Pour être lisible et modifiable par *nginx*, la base de donnée doit appartenir à l'utilisateur `www-data`.
@@ -42,8 +50,6 @@ Si on ajoute l'utilisateur `labo` au groupe `www-data` nous n'obtenons que des d
 
 Les logins suivants sont en base de donnée:
 
-
-
 | E-mail          | Mot de passe | Rôle  | Actif |
 | --------------- | ------------ | ----- | ----- |
 | admin@world.org | admin        | admin | oui   |
@@ -54,8 +60,7 @@ Les logins suivants sont en base de donnée:
 | user5@world.org | user5        | user  | oui   |
 | pomme@hei-vd.ch | pomme        | user  | non   |
 
-
-
+Les utilisateurs suivants ont des messages dans la bd: `admin@world.org`, `user1@world.org`, `user2@world.org`.
 
 
 

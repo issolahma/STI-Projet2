@@ -14,7 +14,6 @@ docker run -ti -v "/$PWD/site":/usr/share/nginx/ -d -p 8080:80 --name Sti_projec
 # change database perms
 echo "change db perms..."
 docker exec -u root Sti_project chown -R www-data:www-data /usr/share/nginx/databases
-#docker exec -u root Sti_project usermod -a -G www-data labo
 
 # run the web and PHP servers
 echo "start services..."

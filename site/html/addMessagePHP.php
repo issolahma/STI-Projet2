@@ -17,9 +17,9 @@ if (!empty($_POST)) {
     
     $result = $db->insertMessage($sender, $receiver, $object, $content, $datestamp);
     
-    //header('Location: inbox.php');
+    header('Location: inbox.php');
 } else {
-    //header('Location: index.php');
+    header('Location: index.php');
 }
 
 print("end");
