@@ -40,9 +40,9 @@ Le script `stopApp.sh` stoppe et supprime le conteneur.
 
 Pour être lisible et modifiable par *nginx*, la base de donnée doit appartenir à l'utilisateur `www-data`.
 
-Le script modifie les droits de cette dernière, pour qu'elle soit utilisable depuis l'application, mais elle devient inutilisable en local.
+Le script `startApp.sh` modifie les droits de cette dernière, pour qu'elle soit utilisable depuis l'application, mais elle devient inutilisable en local.
 
-Si on ajoute l'utilisateur `labo` au groupe `www-data` nous n'obtenons que des droits de lectures, il est donc plus simple de modifier le propriétaire du fichier.
+Si on ajoute l'utilisateur `labo` au groupe `www-data` nous n'obtenons que des droits de lectures, il est donc plus simple de modifier directement le propriétaire du fichier.
 
 
 
@@ -60,7 +60,7 @@ Les logins suivants sont en base de donnée:
 | user5@world.org | user5        | user  | oui   |
 | pomme@hei-vd.ch | pomme        | user  | non   |
 
-Les utilisateurs suivants ont des messages dans la bd: `admin@world.org`, `user1@world.org`, `user2@world.org`.
+Les utilisateurs suivants ont des messages dans la base de données : `admin@world.org`, `user1@world.org`, `user2@world.org`.
 
 
 
